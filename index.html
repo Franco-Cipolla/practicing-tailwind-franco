@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Practice Tailwind</title>
+    <link rel="stylesheet" href="src/output.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Boldonse&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+    </style>
+    <script
+      src="https://kit.fontawesome.com/a2f8ca4d2e.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body
+    class="font-Boldonse mx-auto min-h-screen min-w-screen bg-green-50/80 pr-2.5 text-gray-900 dark:bg-gray-950/90 dark:text-gray-50"
+  >
+    <header
+      class="font-Inter sticky top-0 z-10 mb-15 flex min-h-full min-w-screen items-center justify-between bg-gray-50/90 p-4 font-semibold tracking-wider text-gray-950/90 dark:bg-gray-900/90 dark:text-gray-50"
+    >
+      <h1 class="text-xl">Practicing Tailwind</h1>
+      <div class="md:hidden">
+        <i
+          class="fa-solid fa-bars inline-block cursor-pointer pr-3.5 text-2xl"
+        ></i>
+      </div>
+      <nav class="hidden items-center space-x-4 md:flex md:text-sm">
+        <a href="#" class="text-lg">Home</a>
+        <a href="#" class="text-lg">Skills</a>
+        <a href="#" class="pr-3.5 text-lg">Contact</a>
+      </nav>
+    </header>
+    <main
+      class="flex max-h-full w-full flex-col justify-center p-4 md:mx-auto md:max-w-7xl"
+    >
+      <section class="grid grid-cols-2 p-5">
+        <img
+          src="img/FrancoDjBild.jpeg"
+          alt="Dj"
+          class="max-h-full max-w-full object-contain"
+        />
+        <div class="mx-auto my-auto p-5 text-left">
+          <h1 class="mb-3 text-4xl">Hi!</h1>
+          <p class="font-Inter text-lg leading-6">
+            Lorem ipsum dolor sit amet.
+          </p>
+        </div>
+      </section>
+      <section
+        class="mx-auto my-5 grid grid-cols-1 gap-5 p-5 sm:grid-cols-2 lg:grid-cols-3"
+      >
+        <div class="card">
+          <h1 class="mb-2">Who Am I?</h1>
+          <p class="font-Inter leading-6">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit dicta,
+            saepe earum quia quibusdam vero possimus omnis nihil aut soluta!
+          </p>
+        </div>
+        <div class="card">
+          <h1 class="mb-2">What Do I Do?</h1>
+          <p class="font-Inter leading-6">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta
+            assumenda nostrum accusamus omnis dolorum? Nesciunt.
+          </p>
+        </div>
+        <div class="card sm:col-span-2 lg:col-span-1">
+          <h1 class="mb-2">What are my Strenghts?</h1>
+          <p class="font-Inter leading-6">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo,
+            voluptatem expedita sapiente deleniti labore animi quod quisquam
+            laborum.
+          </p>
+        </div>
+      </section>
+      <section class="mb-5 p-5 text-center">
+        <h1 class="mb-5 border-b-2 border-gray-950/15 pb-4 uppercase">
+          My Skills
+        </h1>
+        <div class="grid grid-cols-3 gap-4 sm:grid-cols-5">
+          <i class="fa-brands fa-html5 skill"></i>
+          <i class="fa-brands fa-css3 skill"></i>
+          <i class="fa-solid fa-laptop-code skill"></i>
+          <i class="fa-solid fa-music skill"></i>
+          <i class="fa-solid fa-graduation-cap skill"></i>
+        </div>
+      </section>
+      <section class="p-5 text-center">
+        <h1 class="mb-5 border-b-2 border-gray-950/15 pb-4 uppercase">
+          My Socials
+        </h1>
+        <div
+          class="grid grid-cols-3 gap-2.5 sm:grid-cols-6 md:grid-cols-4 lg:grid-cols-6"
+        >
+          <a href="#"><i class="fa-brands fa-instagram social"></i></a>
+          <a href="#"><i class="fa-brands fa-tiktok social"></i></a>
+          <a href="#"><i class="fa-brands fa-youtube social"></i></a>
+          <a href="#"><i class="fa-brands fa-github social"></i></a>
+          <a href="#"><i class="fa-brands fa-discord social"></i></a>
+          <a href="#"><i class="fa-brands fa-soundcloud social"></i></a>
+        </div>
+      </section>
+    </main>
+    <footer class="min-w-full bg-gray-50 p-5 text-center dark:bg-gray-900">
+      <p
+        class="font-Inter text-sm tracking-wider text-gray-950 dark:text-gray-50"
+      >
+        Practicing Tailwind 27.03.25 &copy; Copyright 2025
+      </p>
+    </footer>
+  </body>
+</html>
