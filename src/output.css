@@ -11,6 +11,7 @@
     --color-green-950: oklch(0.266 0.065 152.934);
     --color-blue-500: oklch(0.623 0.214 259.815);
     --color-blue-700: oklch(0.488 0.243 264.376);
+    --color-blue-950: oklch(0.282 0.091 267.935);
     --color-gray-50: oklch(0.985 0.002 247.839);
     --color-gray-100: oklch(0.967 0.003 264.542);
     --color-gray-600: oklch(0.446 0.03 256.802);
@@ -2341,6 +2342,17 @@
       }
     }
   }
+  .active\:bg-blue-950\/20 {
+    &:active {
+      background-color: color-mix(in oklab, var(--color-blue-950) 20%, transparent);
+    }
+  }
+  .active\:duration-100 {
+    &:active {
+      --tw-duration: 100ms;
+      transition-duration: 100ms;
+    }
+  }
   .sm\:col-span-2 {
     @media (width >= 40rem) {
       grid-column: span 2 / span 2;
@@ -2547,6 +2559,9 @@
         --tw-scale-z: 110%;
         scale: var(--tw-scale-x) var(--tw-scale-y);
       }
+    }
+    &:active {
+      background-color: color-mix(in oklab, var(--color-blue-950) 20%, transparent);
     }
     @media (width >= 48rem) {
       width: 100%;
