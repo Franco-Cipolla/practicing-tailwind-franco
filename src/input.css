@@ -11,9 +11,24 @@
   }
 
   .skill {
-    @apply cursor-pointer rounded-xl border-2 border-gray-950/30 bg-gray-950/30 px-5 py-3 text-white shadow-md duration-200 ease-out hover:border-gray-950/80 hover:bg-gray-950/80 dark:bg-gray-800/30 dark:shadow-gray-900 dark:hover:border-gray-700/70 dark:hover:bg-gray-700/70;
+    @apply cursor-pointer rounded-xl border-2 border-gray-950/30 px-5 py-3 text-white shadow-md duration-200 ease-out hover:border-gray-950/80 hover:bg-gray-950/80 dark:bg-gray-800/30 dark:shadow-gray-900 dark:hover:border-gray-700/70 dark:hover:bg-gray-700/70;
   }
   .social {
-    @apply mb-2 w-14 transform rounded-full border-2 border-gray-950/50 bg-green-950/20 p-4 text-white shadow-lg duration-350 ease-out hover:scale-110 active:bg-blue-950/20 md:w-full dark:bg-gray-600/30 dark:shadow-gray-900;
+    @apply mb-2 w-14 transform rounded-full border-2 border-gray-950/50 p-4 text-white shadow-lg duration-350 ease-out hover:scale-110 active:bg-blue-950/20 md:w-full dark:bg-gray-600/30 dark:shadow-gray-900;
+  }
+}
+
+@layer utilities {
+  @keyframes slide-in {
+    from {
+      transform: translateY(-100%);
+    }
+    to {
+      transform: translateY(-0%);
+    }
+  }
+
+  .animate-slide-in {
+    animation: slide-in 0.5s ease-in-out forwards;
   }
 }

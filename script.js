@@ -2,8 +2,12 @@ const toggleButton = document.getElementById("toggleButton")
 
 const body = document.body;
 const header = document.querySelector("header");
+const footer = document.querySelector("footer");
 
-const currentMode = localStorage.getItem("mode") || "light";
+
+
+
+    const currentMode = localStorage.getItem("mode") || "light";
 if (currentMode === "dark") {
     body.classList.add("dark");
     body.classList.remove("bg-green-50/80", "text-gray-900");
@@ -18,7 +22,12 @@ toggleButton.addEventListener("click", () => {
         body.classList.remove("dark:bg-gray-950/90", "dark:text-gray-50");
         header.classList.remove("dark");
         header.classList.remove("dark:bg-gray-900/90", "dark:text-gray-50");
-        header.classList.add("bg-gray-50/90", "text-gray-950/90")
+        header.classList.add("bg-gray-50/90", "text-gray-950/90");
+        footer.classList.remove("dark");
+        footer.classList.add("bg-gray-50", "text-gray-950");
+        footer.classList.remove("dark:bg-gray-900", "dark:text-gray-50");
+
+
 
         localStorage.setItem("mode", "light");
         } else {
@@ -27,7 +36,10 @@ toggleButton.addEventListener("click", () => {
             body.classList.add("dark:bg-gray-950/90", "dark:text-gray-50");
             header.classList.add("dark");
             header.classList.add("dark:bg-gray-900/90", "dark:text-gray-50");
-            header.classList.remove("bg-gray-50/90", "text-gray-950/90")
+            header.classList.remove("bg-gray-50/90", "text-gray-950/90");
+            footer.classList.add("dark");
+            footer.classList.remove("bg-gray-50", "text-gray-950");
+            footer.classList.add("dark:bg-gray-900", "dark:text-gray-50");
             localStorage.setItem("mode", "dark");
         }
 })
